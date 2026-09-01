@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio | Instituto Educativo</title>
+<meta name="description" content="Sitio web institucional: noticias, biblioteca digital y acceso a la plataforma de notas.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/logotec.jpeg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===================== ENCABEZADO ===================== -->
+<header class="encabezado">
+    <nav class="barra-navegacion">
+        <div class="marca">
+            <img src="img/logotec.jpeg" alt="Logo institucional" data-config="logo">
+            <div>
+                <h1 data-config="nombre_institucion">Escuela Tecnica 3139 "Gral. M.M De Guemes"</h1>
+                <span data-config="eslogan">Siempre adelante</span>
+            </div>
+        </div>
+
+        <ul class="menu-principal" id="menu-principal">
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://tecnica3139-salta.edu.ar/aulavirtual/login/index.php" data-config-href="plataforma_notas_url" target="_blank" rel="noopener">Plataforma de Notas</a></li>
+        </ul>
+
+        <div style="display:flex; align-items:center; gap:10px;">
+            <button class="boton-menu-movil" id="boton-menu-movil" aria-label="Abrir menú">☰</button>
+        </div>
+    </nav>
+</header>
+
+<!-- ===================== BANNER PRINCIPAL ===================== -->
+<section class="banner">
+    <img class="imagen-fondo" src="" alt="" data-config="banner" onerror="this.style.display='none'">
+    <div class="banner-contenido">
+        <h2>Bienvenidos a <span data-config="nombre_institucion">nuestro instituto</span></h2>
+        <p>Un espacio de aprendizaje, valores y crecimiento para toda la comunidad educativa.</p>
+        <div class="banner-botones">
+            <a href="biblioteca.html" class="boton boton-primario"> Ir a la Biblioteca</a>
+            <a href="https://tecnica3139-salta.edu.ar/aulavirtual/login/index.php" class="boton boton-secundario" style="background-color:transparent;color:#fff;border-color:#fff;" data-config-href="plataforma_notas_url" target="_blank" rel="noopener">🎓 Plataforma de Notas</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== AVISOS IMPORTANTES ===================== -->
+<section class="seccion">
+    <div class="contenedor">
+        <div class="seccion-titulo">
+            <h2>Avisos Importantes</h2>
+            <p>Mantente al tanto de la información más relevante</p>
+        </div>
+        <div class="lista-avisos" id="lista-avisos">
+            <p class="cargando">Cargando avisos...</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== NOTICIAS RECIENTES ===================== -->
+<section class="seccion seccion-alterna">
+    <div class="contenedor">
+        <div class="seccion-titulo">
+            <h2>Noticias Recientes</h2>
+            <p>Entérate de lo último en nuestra comunidad educativa</p>
+        </div>
+        <div class="rejilla-noticias" id="contenedor-noticias-inicio">
+            <p class="cargando">Cargando noticias...</p>
+        </div>
+        <div style="text-align:center; margin-top:34px;">
+            <a href="noticias.html" class="boton boton-secundario">Ver todas las noticias</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PIE DE PÁGINA ===================== -->
+<footer class="pie-pagina">
+    <div class="contenedor">
+        <div class="pie-rejilla">
+            <div>
+                <h4 data-config="nombre_institucion">Gral. M.M De Guemes</h4>
+                <p data-config="eslogan">Siempre adelante</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p data-config="direccion">Dirección de la institución</p>
+                <p data-config="telefono">Teléfono</p>
+                <p data-config="email">correo@institucion.edu</p>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <div class="redes-sociales">
+                    <a href="#" data-config-href="facebook" target="_blank" rel="noopener" title="Facebook">📘</a>
+                    <a href="#" data-config-href="instagram" target="_blank" rel="noopener" title="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <p>&copy; <span id="anio-actual"></span> Instituto Educativo. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/noticias.js"></script>
+<script>
+    document.getElementById('anio-actual').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', () => {
+        cargarNoticias('contenedor-noticias-inicio', 3);
+    });
+</script>
+</body>
+</html>

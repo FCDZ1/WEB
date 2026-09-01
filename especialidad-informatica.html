@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Especialidad Informática | Instituto Educativo</title>
+<meta name="description" content="Conoce la especialidad técnica en Informática: plan de estudios, salida laboral y perfil del egresado.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/logotec.jpeg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===================== ENCABEZADO ===================== -->
+<header class="encabezado">
+    <nav class="barra-navegacion">
+        <div class="marca">
+            <img src="img/logotec.jpeg" alt="Logo institucional" data-config="logo">
+            <div>
+                <h1 data-config="nombre_institucion">Escuela Tecnica 3139 "Gral. M.M De Guemes"</h1>
+                <span data-config="eslogan">Siempre adelante</span>
+            </div>
+        </div>
+
+        <ul class="menu-principal" id="menu-principal">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://tecnica3139-salta.edu.ar/aulavirtual/login/index.php" data-config-href="plataforma_notas_url" target="_blank" rel="noopener">Plataforma de Notas</a></li>
+        </ul>
+
+        <div style="display:flex; align-items:center; gap:10px;">
+            <button class="boton-menu-movil" id="boton-menu-movil" aria-label="Abrir menú">☰</button>
+        </div>
+    </nav>
+</header>
+
+<!-- ===================== BANNER ===================== -->
+<section class="banner" style="padding:50px 20px;">
+    <div class="banner-contenido">
+        <h2>Especialidad Informática</h2>
+        <p>Formación técnica orientada al desarrollo de software, redes y sistemas</p>
+    </div>
+</section>
+
+<!-- ===================== CONTENIDO ===================== -->
+<section class="seccion">
+    <div class="contenedor">
+        <div class="info-institucional">
+            <div class="aparecer">
+                <h2>Sobre la especialidad</h2>
+                <p>
+                    La especialidad en <strong>Informática</strong> forma técnicos capaces de analizar,
+                    diseñar, programar y mantener sistemas informáticos, así como administrar redes
+                    y equipos. A lo largo de la formación, los estudiantes desarrollan pensamiento
+                    lógico, capacidad de resolución de problemas y habilidades de trabajo en equipo.
+                </p>
+                <p style="margin-top:16px;">
+                    El plan de estudios combina programación, bases de datos, redes, mantenimiento
+                    de equipos y proyectos aplicados, preparando a los egresados tanto para
+                    insertarse en el mundo laboral como para continuar estudios superiores.
+                </p>
+            </div>
+            <img src="img/informatica2.jpg" alt="Especialidad Informática" style="max-width:320px; margin:0 auto; border-radius:12px;">
+        </div>
+    </div>
+</section>
+
+<section class="seccion seccion-alterna">
+    <div class="contenedor">
+        <div class="seccion-titulo">
+            <h2>Perfil del egresado</h2>
+            <p>Principales capacidades adquiridas durante la formación</p>
+        </div>
+        <div class="rejilla-accesos">
+            <div class="tarjeta-acceso aparecer">
+                <div class="icono-acceso">💻</div>
+                <h3>Programación</h3>
+                <p>Desarrollo de aplicaciones y sitios web utilizando distintos lenguajes y herramientas.</p>
+            </div>
+            <div class="tarjeta-acceso aparecer">
+                <div class="icono-acceso">🌐</div>
+                <h3>Redes</h3>
+                <p>Instalación, configuración y mantenimiento de redes informáticas.</p>
+            </div>
+            <div class="tarjeta-acceso aparecer">
+                <div class="icono-acceso">🛠️</div>
+                <h3>Soporte técnico</h3>
+                <p>Diagnóstico y resolución de problemas de hardware y software.</p>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:36px;">
+            <a href="nosotros.html" class="boton">← Volver a Nosotros</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PIE DE PÁGINA ===================== -->
+<footer class="pie-pagina">
+    <div class="contenedor">
+        <div class="pie-rejilla">
+            <div>
+                <h4 data-config="nombre_institucion">Instituto Educativo</h4>
+                <p data-config="eslogan">Formando el futuro con excelencia</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p data-config="direccion">Dirección de la institución</p>
+                <p data-config="telefono">Teléfono</p>
+                <p data-config="email">correo@institucion.edu</p>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <div class="redes-sociales">
+                    <a href="#" data-config-href="facebook" target="_blank" rel="noopener" title="Facebook">📘</a>
+                    <a href="#" data-config-href="instagram" target="_blank" rel="noopener" title="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <p>&copy; <span id="anio-actual"></span> Instituto Educativo. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    document.getElementById('anio-actual').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

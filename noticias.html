@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias | Instituto Educativo</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/logotec.jpeg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="encabezado">
+    <nav class="barra-navegacion">
+        <div class="marca">
+            <img src="img/logotec.jpeg" alt="Logo institucional" data-config="logo">
+            <div>
+                <h1 data-config="nombre_institucion">Escuela Tecnica 3139 "Gral. M.M De Guemes"</h1>
+                <span data-config="eslogan">Siempre adelante</span>
+            </div>
+        </div>
+
+        <ul class="menu-principal" id="menu-principal">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="noticias.html" class="activo">Noticias</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#" data-config-href="plataforma_notas_url" target="_blank" rel="noopener">Plataforma de Notas</a></li>
+        </ul>
+
+        <div style="display:flex; align-items:center; gap:10px;">
+            <button class="boton-menu-movil" id="boton-menu-movil" aria-label="Abrir menú">☰</button>
+        </div>
+    </nav>
+</header>
+
+<section class="banner" style="padding:50px 20px;">
+    <div class="banner-contenido">
+        <h2>Noticias Institucionales</h2>
+        <p>Todas las novedades y comunicados de nuestra comunidad educativa</p>
+    </div>
+</section>
+
+<section class="seccion">
+    <div class="contenedor">
+        <div class="rejilla-noticias" id="contenedor-todas-noticias">
+            <p class="cargando">Cargando noticias...</p>
+        </div>
+    </div>
+</section>
+
+<footer class="pie-pagina">
+    <div class="contenedor">
+        <div class="pie-rejilla">
+            <div>
+                <h4 data-config="nombre_institucion">Instituto Educativo</h4>
+                <p data-config="eslogan">Formando el futuro con excelencia</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p data-config="direccion">Dirección de la institución</p>
+                <p data-config="telefono">Teléfono</p>
+                <p data-config="email">correo@institucion.edu</p>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <div class="redes-sociales">
+                    <a href="#" data-config-href="facebook" target="_blank" rel="noopener" title="Facebook">📘</a>
+                    <a href="#" data-config-href="instagram" target="_blank" rel="noopener" title="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <p>&copy; <span id="anio-actual"></span> Instituto Educativo. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/noticias.js"></script>
+<script>
+    document.getElementById('anio-actual').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', () => {
+        cargarNoticias('contenedor-todas-noticias', null);
+    });
+</script>
+</body>
+</html>
