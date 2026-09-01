@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel | Administración</title>
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<div class="panel-app">
+
+    <!-- ===================== BARRA LATERAL ===================== -->
+    <aside class="barra-lateral" id="barra-lateral">
+        <div class="marca-panel">
+            <img src="../img/logo.svg" alt="Logo">
+            <span>Panel Admin</span>
+        </div>
+        <nav>
+            <a href="panel.html" class="activo">🏠 Dashboard</a>
+            <a href="noticias.html">📰 Noticias</a>
+            <a href="biblioteca.html">📚 Biblioteca</a>
+            <a href="configuracion.html">⚙️ Configuración</a>
+            <a href="../index.html" target="_blank">🌐 Ver sitio público</a>
+        </nav>
+    </aside>
+
+    <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+    <div class="contenido-principal">
+        <header class="barra-superior">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <button class="boton-menu-panel" id="boton-menu-panel">☰</button>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="usuario-sesion">
+                <span>👤 <strong id="nombre-admin-sesion">Administrador</strong></span>
+                <button class="boton boton-secundario" id="boton-cerrar-sesion">Cerrar sesión</button>
+            </div>
+        </header>
+
+        <main class="contenido-panel">
+            <div class="rejilla-estadisticas">
+                <div class="tarjeta-estadistica">
+                    <div class="icono">📰</div>
+                    <div>
+                        <div class="numero" id="estadistica-noticias">0</div>
+                        <div class="etiqueta">Noticias publicadas</div>
+                    </div>
+                </div>
+                <div class="tarjeta-estadistica">
+                    <div class="icono">📚</div>
+                    <div>
+                        <div class="numero" id="estadistica-documentos">0</div>
+                        <div class="etiqueta">Documentos en biblioteca</div>
+                    </div>
+                </div>
+                <div class="tarjeta-estadistica">
+                    <div class="icono">✉️</div>
+                    <div>
+                        <div class="numero" id="estadistica-mensajes">0</div>
+                        <div class="etiqueta">Mensajes de contacto</div>
+                    </div>
+                </div>
+                <div class="tarjeta-estadistica">
+                    <div class="icono">🔔</div>
+                    <div>
+                        <div class="numero" id="estadistica-no-leidos">0</div>
+                        <div class="etiqueta">Mensajes sin leer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-panel">
+                <h3>Accesos rápidos</h3>
+                <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                    <a href="noticias.html" class="boton boton-primario">+ Agregar noticia</a>
+                    <a href="biblioteca.html" class="boton boton-primario">+ Subir documento</a>
+                    <a href="configuracion.html" class="boton boton-secundario">Editar información institucional</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-panel">
+                <h3>Mensajes de contacto recientes</h3>
+                <div id="lista-mensajes-recientes">
+                    <p class="cargando-texto">Cargando mensajes...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="js/admin-common.js"></script>
+<script src="js/panel.js"></script>
+</body>
+</html>

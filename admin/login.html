@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión | Panel Administrativo</title>
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<div class="pantalla-login">
+    <div class="caja-login">
+        <img src="../img/logo.svg" alt="Logo institucional">
+        <h1>Panel Administrativo</h1>
+        <p class="subtitulo">Ingresa tus credenciales para continuar</p>
+
+        <div id="mensaje-estado-login" class="mensaje-estado"></div>
+
+        <form id="formulario-login">
+            <div class="grupo-formulario">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required autocomplete="username">
+            </div>
+            <div class="grupo-formulario">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+            </div>
+            <button type="submit" class="boton boton-primario boton-completo" id="boton-ingresar">Ingresar</button>
+        </form>
+
+        <p class="texto-ayuda" style="margin-top:20px;">
+            Acceso exclusivo para personal autorizado de la institución.
+        </p>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

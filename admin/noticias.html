@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias | Administración</title>
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<div class="panel-app">
+
+    <aside class="barra-lateral" id="barra-lateral">
+        <div class="marca-panel">
+            <img src="../img/logo.svg" alt="Logo">
+            <span>Panel Admin</span>
+        </div>
+        <nav>
+            <a href="panel.html">🏠 Dashboard</a>
+            <a href="noticias.html" class="activo">📰 Noticias</a>
+            <a href="biblioteca.html">📚 Biblioteca</a>
+            <a href="configuracion.html">⚙️ Configuración</a>
+            <a href="../index.html" target="_blank">🌐 Ver sitio público</a>
+        </nav>
+    </aside>
+
+    <div class="contenido-principal">
+        <header class="barra-superior">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <button class="boton-menu-panel" id="boton-menu-panel">☰</button>
+                <h2>Gestión de Noticias</h2>
+            </div>
+            <div class="usuario-sesion">
+                <span>👤 <strong id="nombre-admin-sesion">Administrador</strong></span>
+                <button class="boton boton-secundario" id="boton-cerrar-sesion">Cerrar sesión</button>
+            </div>
+        </header>
+
+        <main class="contenido-panel">
+
+            <div class="tarjeta-panel">
+                <h3 id="titulo-formulario-noticia">Agregar noticia</h3>
+                <div id="mensaje-estado-noticia" class="mensaje-estado"></div>
+
+                <form id="formulario-noticia">
+                    <div class="fila-formulario">
+                        <div class="grupo-formulario">
+                            <label for="noticia-titulo">Título *</label>
+                            <input type="text" id="noticia-titulo" required maxlength="150">
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="noticia-fecha">Fecha *</label>
+                            <input type="date" id="noticia-fecha" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="noticia-resumen">Resumen (se muestra en la tarjeta) *</label>
+                        <textarea id="noticia-resumen" required maxlength="300" style="min-height:70px;"></textarea>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="noticia-contenido">Contenido completo (se muestra al hacer clic en "Leer más")</label>
+                        <textarea id="noticia-contenido" maxlength="4000"></textarea>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label>Imagen de la noticia</label>
+                        <div class="zona-subida" id="zona-subida-imagen">
+                            <div>📷 Haz clic para seleccionar una imagen (JPG, PNG, WEBP o GIF, máx. 5 MB)</div>
+                            <div class="nombre-archivo" id="nombre-archivo-imagen">Ningún archivo seleccionado</div>
+                            <input type="file" id="input-imagen-noticia" accept=".jpg,.jpeg,.png,.webp,.gif">
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario" style="display:flex; align-items:center; gap:8px;">
+                        <input type="checkbox" id="noticia-destacado" style="width:auto;">
+                        <label for="noticia-destacado" style="margin:0;">Marcar como noticia destacada</label>
+                    </div>
+
+                    <div style="display:flex; gap:12px; margin-top:10px;">
+                        <button type="submit" class="boton boton-primario" id="boton-guardar-noticia">Guardar noticia</button>
+                        <button type="button" class="boton boton-secundario oculto" id="boton-cancelar-edicion">Cancelar edición</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tarjeta-panel">
+                <h3>Noticias publicadas</h3>
+                <div id="tabla-noticias">
+                    <p class="cargando-texto">Cargando noticias...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="js/admin-common.js"></script>
+<script src="js/noticias.js"></script>
+</body>
+</html>
