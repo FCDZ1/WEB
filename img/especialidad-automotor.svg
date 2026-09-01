@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bgAuto" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f7d4f"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgAuto)"/>
+  <g opacity="0.12">
+    <circle cx="80" cy="60" r="110" fill="#ffffff"/>
+    <circle cx="540" cy="340" r="140" fill="#ffffff"/>
+  </g>
+  <!-- car body -->
+  <path d="M150 250 Q170 190 230 185 L370 185 Q420 190 445 240 L470 250 Q480 252 480 265 L480 285 L140 285 L140 265 Q140 252 150 250 Z" fill="#eaf6ee"/>
+  <path d="M230 185 L255 150 L345 150 L370 185 Z" fill="#eaf6ee"/>
+  <path d="M262 158 L280 185 L320 185 L338 158 Z" fill="#1b4332"/>
+  <!-- wheels -->
+  <circle cx="205" cy="285" r="28" fill="#1b4332"/>
+  <circle cx="205" cy="285" r="12" fill="#eaf6ee"/>
+  <circle cx="415" cy="285" r="28" fill="#1b4332"/>
+  <circle cx="415" cy="285" r="12" fill="#eaf6ee"/>
+  <!-- headlight -->
+  <circle cx="465" cy="255" r="8" fill="#ffb300"/>
+  <text x="300" y="352" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Automotor</text>
+</svg>
