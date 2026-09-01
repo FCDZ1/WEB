@@ -1,0 +1,20 @@
+{
+  "documentos": [
+    {
+      "id": 1,
+      "titulo": "Reglamento Interno Estudiantil",
+      "categoria": "Reglamentos",
+      "descripcion": "Normativa interna que rige la convivencia dentro de la institución.",
+      "archivo": "",
+      "fecha": "2026-01-05"
+    },
+    {
+      "id": 2,
+      "titulo": "Guía de Útiles Escolares",
+      "categoria": "Guías",
+      "descripcion": "Lista de materiales requeridos para cada grado.",
+      "archivo": "",
+      "fecha": "2026-01-05"
+    }
+  ]
+}

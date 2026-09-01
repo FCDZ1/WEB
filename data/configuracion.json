@@ -1,0 +1,19 @@
+{
+  "nombre_institucion": "Instituto Educativo Modelo",
+  "eslogan": "Formando el futuro con excelencia",
+  "logo": "img/logo.svg",
+  "banner": "",
+  "direccion": "Av. Principal 123, Ciudad",
+  "telefono": "+502 1234-5678",
+  "email": "contacto@institutomodelo.edu",
+  "facebook": "",
+  "instagram": "",
+  "plataforma_notas_url": "https://plataforma-notas.ejemplo.com",
+  "informacion_institucional": "Somos una institución educativa comprometida con la formación integral de nuestros estudiantes, promoviendo valores, excelencia académica y desarrollo humano desde hace más de 20 años.",
+  "avisos": [
+    {
+      "titulo": "Reunión de padres de familia",
+      "texto": "Se convoca a reunión general el próximo viernes a las 6:00 p.m. en el salón de usos múltiples."
+    }
+  ]
+}

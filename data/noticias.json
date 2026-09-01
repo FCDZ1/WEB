@@ -1,0 +1,22 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Bienvenida al ciclo escolar 2026",
+      "fecha": "2026-01-15",
+      "imagen": "",
+      "resumen": "Damos la bienvenida a todos los estudiantes y padres de familia al nuevo ciclo escolar.",
+      "contenido": "Damos la bienvenida a todos los estudiantes y padres de familia al nuevo ciclo escolar. Este año trabajaremos con nuevas metodologías de enseñanza y actividades extracurriculares para fortalecer el aprendizaje de nuestros alumnos. Esperamos contar con su apoyo y compromiso durante todo el año.",
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "titulo": "Inscripciones abiertas",
+      "fecha": "2026-01-10",
+      "imagen": "",
+      "resumen": "Ya están abiertas las inscripciones para el nuevo ciclo escolar.",
+      "contenido": "Ya están abiertas las inscripciones para el nuevo ciclo escolar. Pueden acercarse a secretaría en horario de 8:00 a.m. a 4:00 p.m. con la documentación requerida.",
+      "destacado": false
+    }
+  ]
+}
